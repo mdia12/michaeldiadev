@@ -1,10 +1,9 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Presentación - Michael DIA',
-  description: 'Emprendedor Tecnológico, IA y Automatización.',
+  description: 'Emprendedor Tech, IA y Automatización.',
 };
 
 export default function PresentationPageEs() {
@@ -14,29 +13,21 @@ export default function PresentationPageEs() {
       {/* 0) HEADER */}
       <header className="sticky top-0 z-50 w-full border-b border-white/50 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <div className="flex items-center gap-2">
-             <div className="relative w-48 h-12">
-               <Image 
-                src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/michaeldia%20dev.png"
-                alt="Logotipo Michael DIA"
-                fill
-                className="object-contain object-left"
-                sizes="(max-width: 768px) 150px, 200px"
-              />
-            </div>
+          <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-indigo-800 bg-clip-text text-transparent">
+            Michael DIA
           </div>
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
               <a href="#projects" className="hover:text-indigo-600 transition-colors">Proyectos</a>
               <a href="#expertise" className="hover:text-indigo-600 transition-colors">Experiencia</a>
-              <a href="/contact" className="hover:text-indigo-600 transition-colors">Contacto</a>
+              <a href="#contact" className="hover:text-indigo-600 transition-colors">Contacto</a>
             </nav>
              <div className="flex gap-2 text-sm font-medium">
-              <a href="/" className="text-slate-400 hover:text-indigo-600 transition-colors">FR</a>
+              <a href="/presentation" className="text-slate-400 hover:text-indigo-600 transition-colors">FR</a>
               <span className="text-slate-300">|</span>
-              <a href="/en" className="text-slate-400 hover:text-indigo-600 transition-colors">EN</a>
+              <a href="/presentation/en" className="text-slate-400 hover:text-indigo-600 transition-colors">EN</a>
               <span className="text-slate-300">|</span>
-              <a href="/es" className="text-indigo-600 font-bold pb-1 link-underline">ES</a>
+              <a href="/presentation/es" className="text-indigo-600 font-bold pb-1 link-underline">ES</a>
             </div>
           </div>
         </div>
@@ -59,7 +50,7 @@ export default function PresentationPageEs() {
         </h1>
         
         <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-          Diseño arquitecturas SaaS robustas y soluciones de IA orientadas a la eficiencia operativa y financiera.
+          Diseño arquitecturas SaaS robustas y soluciones de IA orientadas al rendimiento operativo y financiero.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
@@ -70,10 +61,10 @@ export default function PresentationPageEs() {
             Descargar perfil
           </a>
           <a 
-            href="/contact" 
+            href="mailto:contact@michaeldia.com" 
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-200 text-base font-medium rounded-full text-slate-700 bg-white hover:bg-slate-50 hover:border-indigo-200 hover:text-indigo-600 transition-all duration-200"
           >
-            Contactar
+            Contactarme
           </a>
         </div>
       </section>
@@ -81,33 +72,24 @@ export default function PresentationPageEs() {
       {/* 2) WHO I AM */}
       <section className="px-6 py-24 bg-white relative">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12">
-            Quién soy
-            <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
-          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-4">
-              <div className="relative w-64 h-auto lg:w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-24">
-                <Image 
-                  src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/mike%20corporate.png"
-                  alt="Michael DIA"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-              </div>
+               <h2 className="text-3xl font-bold text-slate-900 sticky top-24">
+                Quién soy
+                <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
+              </h2>
             </div>
             
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed p-8 rounded-2xl bg-slate-50/50 border border-slate-100">
                 <p className="mb-6">
-                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Emprendedor Tecnológico y Consultor de IA.
+                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Emprendedor Tech y consultor de IA.
                 </p>
                 <p>
-                  Apasionado por la eficiencia operativa y las tecnologías de vanguardia, no solo escribo código: construyo sistemas. Diseño y despliego soluciones inteligentes que transforman la complejidad técnica en una ventaja competitiva tangible.
+                  Apasionado por la eficiencia operativa y las tecnologías de punta, no solo escribo código: construyo sistemas. Diseño y despliego soluciones inteligentes que transforman la complejidad técnica en una ventaja competitiva tangible.
                 </p>
                 <p className="mt-4">
-                  Mi enfoque es eminentemente pragmático. La tecnología no es un fin en sí misma, sino una palanca para servir a una estrategia de negocio clara. Priorizo la robustez, la seguridad y el mantenimiento a largo plazo.
+                  Mi enfoque es decididamente pragmático. La tecnología no es un fin en sí misma, sino una palanca para servir a una estrategia de negocio clara. Priorizo la robustez, la seguridad y el mantenimiento a largo plazo.
                 </p>
               </div>
               
@@ -141,8 +123,7 @@ export default function PresentationPageEs() {
               title="NexoAI"
               subtitle="Agencia de Automatización IA"
               tag="B2B / SaaS"
-              description="Optimización de operaciones empresariales mediante agentes inteligentes a medida."
-              link="https://nexoai.fr"
+              description="Agilizar las operaciones empresariales mediante agentes inteligentes personalizados."
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Agentes de negocio IA autogestionados</ListItem>
@@ -158,7 +139,6 @@ export default function PresentationPageEs() {
               tag="FinTech / Research"
               description="Investigación cuantitativa y apoyo a la toma de decisiones para los mercados financieros."
               highlight="Investigación y Responsabilidad"
-              link="https://algonovaai.com"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Análisis de datos en tiempo real</ListItem>
@@ -174,28 +154,11 @@ export default function PresentationPageEs() {
               tag="SaaS / Infra"
               description="Plataforma técnica que asegura la ejecución y seguridad de las operaciones de trading."
               highlight="Fiabilidad Crítica"
-              link="https://algonovaedge.net"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Conexiones de baja latencia (Tradovate)</ListItem>
                 <ListItem>Gestión centralizada del riesgo</ListItem>
                 <ListItem>Webhooks de TradingView seguros</ListItem>
-              </ul>
-            </ProjectCard>
-
-            {/* D) Novareceipt */}
-            <ProjectCard 
-              title="Novareceipt"
-              subtitle="Escáner de Recibos IA"
-              tag="Productividad / SaaS"
-              description="Aplicación móvil para digitalización de recibos conectada a IA con exportación automatizada."
-              highlight="Organización Automatizada"
-              link="https://www.novareceipt.com/"
-            >
-              <ul className="space-y-3 mt-4">
-                <ListItem>Escaneo inteligente de recibos</ListItem>
-                <ListItem>Extracción de datos por IA</ListItem>
-                <ListItem>Exportación automática a Google Drive</ListItem>
               </ul>
             </ProjectCard>
 
@@ -307,12 +270,12 @@ export default function PresentationPageEs() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8">
-              Metodología de Trabajo
+              Mi Forma de Trabajar
             </h2>
             <ul className="space-y-6">
               <WorkStyleItem 
                 title="Claridad antes que velocidad" 
-                text="Sin deuda técnica superflua. Cada línea de código tiene una razón de ser." 
+                text="Sin deuda técnica inútil. Cada línea de código tiene una razón de ser." 
               />
               <WorkStyleItem 
                 title="Seguridad por defecto" 
@@ -377,7 +340,7 @@ export default function PresentationPageEs() {
               </li>
               <li className="flex flex-col">
                 <span className="font-bold text-slate-800">Data e IA</span>
-                <span className="text-slate-600">n8n, OpenAI API, PyTorch, Pandas, Vector DBs</span>
+                <span className="text-slate-600">OpenAI API, PyTorch, Pandas, Vector DBs</span>
               </li>
               <li className="flex flex-col">
                 <span className="font-bold text-slate-800">Infraestructura</span>
@@ -393,7 +356,7 @@ export default function PresentationPageEs() {
                  <strong className="text-slate-900 block mb-1">Idiomas</strong>
                  🇫🇷 Francés (Nativo)<br/>
                  🇬🇧 Inglés (Pro)<br/>
-                 🇪🇸 Español (Pro)
+                 🇪🇸 Español (Intermedio)
                </li>
                <li>
                  <strong className="text-slate-900 block mb-1">Visión</strong>
@@ -417,7 +380,7 @@ export default function PresentationPageEs() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <a 
-              href="/contact" 
+              href="mailto:contact@michaeldia.com" 
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-white bg-slate-900 hover:bg-slate-800 hover:scale-105 transition-all duration-200 shadow-lg"
             >
               Iniciar una conversación
@@ -460,18 +423,16 @@ function ProjectCard({
   description, 
   tag, 
   highlight, 
-  children,
-  link
+  children 
 }: { 
   title: string, 
   subtitle: string, 
   description?: string, 
   tag?: string, 
   highlight?: string, 
-  children: React.ReactNode,
-  link?: string
+  children: React.ReactNode 
 }) {
-  const content = (
+  return (
     <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-200 transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
       {tag && (
         <span className="absolute top-6 right-6 inline-block px-3 py-1 rounded-full bg-indigo-50 text-xs font-semibold text-indigo-600 border border-indigo-100 uppercase tracking-wide">
@@ -501,16 +462,6 @@ function ProjectCard({
       )}
     </div>
   );
-
-  if (link) {
-    return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full">
-        {content}
-      </a>
-    );
-  }
-
-  return content;
 }
 
 function ListItem({ children }: { children: React.ReactNode }) {

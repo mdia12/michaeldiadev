@@ -1,42 +1,33 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Presentación - Michael DIA',
-  description: 'Emprendedor Tecnológico, IA y Automatización.',
+  title: 'Global Presentation - Michael DIA',
+  description: 'Tech Entrepreneur, AI & Automation.',
 };
 
-export default function PresentationPageEs() {
+export default function PresentationPageEn() {
   return (
     <div className="min-h-screen bg-white text-slate-800 selection:bg-slate-100 font-sans">
       
       {/* 0) HEADER */}
       <header className="sticky top-0 z-50 w-full border-b border-white/50 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <div className="flex items-center gap-2">
-             <div className="relative w-48 h-12">
-               <Image 
-                src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/michaeldia%20dev.png"
-                alt="Logotipo Michael DIA"
-                fill
-                className="object-contain object-left"
-                sizes="(max-width: 768px) 150px, 200px"
-              />
-            </div>
+          <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-indigo-800 bg-clip-text text-transparent">
+            Michael DIA
           </div>
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
-              <a href="#projects" className="hover:text-indigo-600 transition-colors">Proyectos</a>
-              <a href="#expertise" className="hover:text-indigo-600 transition-colors">Experiencia</a>
-              <a href="/contact" className="hover:text-indigo-600 transition-colors">Contacto</a>
+              <a href="#projects" className="hover:text-indigo-600 transition-colors">Projects</a>
+              <a href="#expertise" className="hover:text-indigo-600 transition-colors">Expertise</a>
+              <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
             </nav>
-             <div className="flex gap-2 text-sm font-medium">
-              <a href="/" className="text-slate-400 hover:text-indigo-600 transition-colors">FR</a>
+            <div className="flex gap-2 text-sm font-medium">
+              <a href="/presentation" className="text-slate-400 hover:text-indigo-600 transition-colors">FR</a>
               <span className="text-slate-300">|</span>
-              <a href="/en" className="text-slate-400 hover:text-indigo-600 transition-colors">EN</a>
+              <a href="/presentation/en" className="text-indigo-600 font-bold pb-1 link-underline">EN</a>
               <span className="text-slate-300">|</span>
-              <a href="/es" className="text-indigo-600 font-bold pb-1 link-underline">ES</a>
+              <a href="/presentation/es" className="text-slate-400 hover:text-indigo-600 transition-colors">ES</a>
             </div>
           </div>
         </div>
@@ -51,15 +42,15 @@ export default function PresentationPageEs() {
         
         <div className="mb-8 inline-flex items-center px-4 py-1.5 rounded-full border border-indigo-100 bg-white/80 shadow-sm backdrop-blur-sm">
           <span className="flex h-2 w-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
-          <span className="text-sm font-medium text-slate-600 tracking-wide">Disponible para nuevos proyectos</span>
+          <span className="text-sm font-medium text-slate-600 tracking-wide">Available for new projects</span>
         </div>
         
         <h1 className="max-w-4xl mx-auto text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 leading-[1.1]">
-          Emprendedor <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">IA & Automatización</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-emerald-500">AI & Automation</span> Entrepreneur
         </h1>
         
         <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-          Diseño arquitecturas SaaS robustas y soluciones de IA orientadas a la eficiencia operativa y financiera.
+          I build robust SaaS architectures and AI solutions focused on operational performance and financial efficiency.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
@@ -67,13 +58,13 @@ export default function PresentationPageEs() {
             href="/api/profile-pdf" 
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 transition-all duration-200"
           >
-            Descargar perfil
+            Download Profile
           </a>
           <a 
-            href="/contact" 
+            href="mailto:contact@michaeldia.com" 
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-200 text-base font-medium rounded-full text-slate-700 bg-white hover:bg-slate-50 hover:border-indigo-200 hover:text-indigo-600 transition-all duration-200"
           >
-            Contactar
+            Contact Me
           </a>
         </div>
       </section>
@@ -81,40 +72,31 @@ export default function PresentationPageEs() {
       {/* 2) WHO I AM */}
       <section className="px-6 py-24 bg-white relative">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-12">
-            Quién soy
-            <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
-          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-4">
-              <div className="relative w-64 h-auto lg:w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-24">
-                <Image 
-                  src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/mike%20corporate.png"
-                  alt="Michael DIA"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-              </div>
+               <h2 className="text-3xl font-bold text-slate-900 sticky top-24">
+                Who I am
+                <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
+              </h2>
             </div>
             
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed p-8 rounded-2xl bg-slate-50/50 border border-slate-100">
                 <p className="mb-6">
-                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Emprendedor Tecnológico y Consultor de IA.
+                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Tech Entrepreneur & AI Consultant.
                 </p>
                 <p>
-                  Apasionado por la eficiencia operativa y las tecnologías de vanguardia, no solo escribo código: construyo sistemas. Diseño y despliego soluciones inteligentes que transforman la complejidad técnica en una ventaja competitiva tangible.
+                  Passionate about operational efficiency and cutting-edge technologies, I don't just code: I build systems. I design and deploy intelligent solutions that transform technical complexity into a tangible competitive advantage.
                 </p>
                 <p className="mt-4">
-                  Mi enfoque es eminentemente pragmático. La tecnología no es un fin en sí misma, sino una palanca para servir a una estrategia de negocio clara. Priorizo la robustez, la seguridad y el mantenimiento a largo plazo.
+                  My approach is resolutely pragmatic. Technology is not an end in itself, but a lever to serve a clear business strategy. I prioritize robustness, security, and long-term maintainability.
                 </p>
               </div>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <Badge icon="📍">Francia</Badge>
-                <Badge icon="🏝️">Canarias</Badge>
-                <Badge icon="🌍">Internacional</Badge>
+                <Badge icon="📍">France</Badge>
+                <Badge icon="🏝️">Canary Islands</Badge>
+                <Badge icon="🌍">International</Badge>
               </div>
             </div>
           </div>
@@ -127,10 +109,10 @@ export default function PresentationPageEs() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="mb-16 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Mis proyectos
+              My Projects
             </h2>
             <p className="text-slate-500 max-w-2xl mx-auto">
-              Un portafolio enfocado en la automatización, las finanzas y la inteligencia artificial.
+              A portfolio focused on automation, finance, and artificial intelligence.
             </p>
           </div>
           
@@ -139,63 +121,44 @@ export default function PresentationPageEs() {
             {/* A) NexoAI */}
             <ProjectCard 
               title="NexoAI"
-              subtitle="Agencia de Automatización IA"
+              subtitle="AI Automation Agency"
               tag="B2B / SaaS"
-              description="Optimización de operaciones empresariales mediante agentes inteligentes a medida."
-              link="https://nexoai.fr"
+              description="Streamlining business operations through custom intelligent agents."
             >
               <ul className="space-y-3 mt-4">
-                <ListItem>Agentes de negocio IA autogestionados</ListItem>
-                <ListItem>Automatización de flujos de trabajo complejos</ListItem>
-                <ListItem>Integración de API y sistemas heredados</ListItem>
+                <ListItem>Self-managed AI business agents</ListItem>
+                <ListItem>Complex workflow automation</ListItem>
+                <ListItem>API & Legacy integration</ListItem>
               </ul>
             </ProjectCard>
 
             {/* B) AlgoNovaAI */}
             <ProjectCard 
               title="AlgoNovaAI"
-              subtitle="IA Aplicada al Trading"
+              subtitle="AI Applied to Trading"
               tag="FinTech / Research"
-              description="Investigación cuantitativa y apoyo a la toma de decisiones para los mercados financieros."
-              highlight="Investigación y Responsabilidad"
-              link="https://algonovaai.com"
+              description="Quantitative research and decision support for financial markets."
+              highlight="Research & Responsibility"
             >
               <ul className="space-y-3 mt-4">
-                <ListItem>Análisis de datos en tiempo real</ListItem>
-                <ListItem>Modelos predictivos y soporte a decisiones</ListItem>
-                <ListItem>Enfoque estricto de control de riesgos</ListItem>
+                <ListItem>Real-time data analysis</ListItem>
+                <ListItem>Predictive models & decision support</ListItem>
+                <ListItem>Strict risk control approach</ListItem>
               </ul>
             </ProjectCard>
 
             {/* C) AlgoNovaEdge */}
             <ProjectCard 
               title="AlgoNovaEdge"
-              subtitle="Infraestructura para Traders"
+              subtitle="Infrastructure for Traders"
               tag="SaaS / Infra"
-              description="Plataforma técnica que asegura la ejecución y seguridad de las operaciones de trading."
-              highlight="Fiabilidad Crítica"
-              link="https://algonovaedge.net"
+              description="Technical platform ensuring execution and security of trading operations."
+              highlight="Critical Reliability"
             >
               <ul className="space-y-3 mt-4">
-                <ListItem>Conexiones de baja latencia (Tradovate)</ListItem>
-                <ListItem>Gestión centralizada del riesgo</ListItem>
-                <ListItem>Webhooks de TradingView seguros</ListItem>
-              </ul>
-            </ProjectCard>
-
-            {/* D) Novareceipt */}
-            <ProjectCard 
-              title="Novareceipt"
-              subtitle="Escáner de Recibos IA"
-              tag="Productividad / SaaS"
-              description="Aplicación móvil para digitalización de recibos conectada a IA con exportación automatizada."
-              highlight="Organización Automatizada"
-              link="https://www.novareceipt.com/"
-            >
-              <ul className="space-y-3 mt-4">
-                <ListItem>Escaneo inteligente de recibos</ListItem>
-                <ListItem>Extracción de datos por IA</ListItem>
-                <ListItem>Exportación automática a Google Drive</ListItem>
+                <ListItem>Low-latency connections (Tradovate)</ListItem>
+                <ListItem>Centralized risk management</ListItem>
+                <ListItem>Secure TradingView webhooks</ListItem>
               </ul>
             </ProjectCard>
 
@@ -213,26 +176,26 @@ export default function PresentationPageEs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Lo que hago concretamente
+                What I do concretely
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed mb-8">
-                Más allá del código, aporto una visión arquitectónica completa. Diseño sistemas capaces de escalar sin sacrificar la seguridad.
+                Beyond code, I bring a complete architectural vision. I design systems capable of scaling without sacrificing security.
               </p>
               <div className="inline-block p-6 bg-slate-800/80 rounded-2xl border border-slate-700 backdrop-blur-sm shadow-xl relative overflow-hidden group">
                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                 <p className="text-emerald-400 font-medium mb-2 relative z-10">Enfoque de calidad</p>
+                 <p className="text-emerald-400 font-medium mb-2 relative z-10">Quality Focus</p>
                  <p className="text-slate-300 text-sm relative z-10">
-                   "Sin código desechable. Construyo para durar."
+                   "No disposable code. I build to last."
                  </p>
               </div>
             </div>
             
             <div className="space-y-6">
-              <CheckItem text="Arquitectura SaaS Escalable" subtext="Multi-tenant, Auth, Diseño de bases de datos" />
-              <CheckItem text="Integración de APIs Complejas" subtext="Stripe, OpenAI, Brokers, CRMs" />
-              <CheckItem text="Automatización e IA" subtext="RAG, Agentes, Pipelines de datos" />
-              <CheckItem text="Seguridad y Cifrado" subtext="Protección de datos sensibles" />
-              <CheckItem text="Desarrollo Rápido (MVP)" subtext="Time-to-market optimizado" />
+              <CheckItem text="Scalable SaaS Architecture" subtext="Multi-tenant, Auth, Database design" />
+              <CheckItem text="Complex API Integration" subtext="Stripe, OpenAI, Brokers, CRMs" />
+              <CheckItem text="Automation & AI" subtext="RAG, Agents, Data Pipelines" />
+              <CheckItem text="Security & Encryption" subtext="Sensitive data protection" />
+              <CheckItem text="Rapid Development (MVP)" subtext="Optimized Time-to-market" />
             </div>
           </div>
         </div>
@@ -243,36 +206,36 @@ export default function PresentationPageEs() {
         <div className="max-w-4xl mx-auto">
           <div className="mb-12 text-center md:text-left">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">
-              Cómo colaboro
+              How I collaborate
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-              Mis colaboraciones se basan en la claridad de ejecución y la creación de valor duradero. Me integro donde la necesidad técnica es crítica.
+              My collaborations are based on execution clarity and lasting value creation. I integrate where the technical need is critical.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <CollaborationCard 
-              title="Consultoría Estratégica"
+              title="Strategic Consulting"
               items={[
-                "Definición de Producto y Tecnología",
-                "Elección de Arquitectura",
-                "Hoja de Ruta CTO"
+                "Product & Tech Scoping",
+                "Architecture Choices",
+                "CTO Roadmap"
               ]} 
             />
             <CollaborationCard 
-              title="Desarrollo y PoC"
+              title="Development & PoC"
               items={[
-                "Creación rápida de MVP",
-                "Implementación de IA",
-                "Asociaciones a largo plazo"
+                "Rapid MVP Creation",
+                "AI Implementation",
+                "Long-term Partnerships"
               ]} 
             />
             <CollaborationCard 
-              title="Intervenciones"
+              title="Interventions"
               items={[
-                "Auditoría de Código e Infraestructura",
-                "Optimización del Rendimiento",
-                "Automatización de Procesos"
+                "Code & Infra Audit",
+                "Performance Optimization",
+                "Process Automation"
               ]} 
             />
           </div>
@@ -283,20 +246,20 @@ export default function PresentationPageEs() {
       <section className="px-6 py-24 bg-slate-50 border-y border-slate-200">
         <div className="max-w-5xl mx-auto">
            <h2 className="text-3xl font-bold text-slate-900 mb-12 text-center">
-             Casos de Uso Concretos
+             Concrete Use Cases
            </h2>
            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
              <UseCaseCard 
-               title="SaaS de Trading"
-               desc="Implementación de una plataforma con conexiones seguras a brokers y gestión de riesgos en tiempo real."
+               title="Trading SaaS"
+               desc="Implementation of a platform with secure broker connections and real-time risk management."
              />
              <UseCaseCard 
-               title="Automatización de Negocios"
-               desc="Automatización completa de procesos (datos, soporte, informes) para ganancias operativas inmediatas."
+               title="Business Automation"
+               desc="Complete automation of processes (data, support, reporting) for immediate operational gains."
              />
              <UseCaseCard 
-               title="Agentes de IA Integrados"
-               desc="Despliegue de agentes de IA contextuales conectados a herramientas existentes para el apoyo a la decisión."
+               title="Integrated AI Agents"
+               desc="Deployment of contextual AI agents connected to existing tools for decision support."
              />
            </div>
         </div>
@@ -307,24 +270,24 @@ export default function PresentationPageEs() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8">
-              Metodología de Trabajo
+              My Work Style
             </h2>
             <ul className="space-y-6">
               <WorkStyleItem 
-                title="Claridad antes que velocidad" 
-                text="Sin deuda técnica superflua. Cada línea de código tiene una razón de ser." 
+                title="Clarity before speed" 
+                text="No useless technical debt. Every line of code has a reason to exist." 
               />
               <WorkStyleItem 
-                title="Seguridad por defecto" 
-                text="Identificación de riesgos y cumplimiento desde la fase de diseño." 
+                title="Security by default" 
+                text="Risk identification and compliance from the design phase." 
               />
               <WorkStyleItem 
-                title="MVP orientado al valor" 
-                text="No desarrollamos por desarrollar, sino para validar y servir al negocio." 
+                title="Value-oriented MVP" 
+                text="We don't develop just to develop, but to validate and serve the business." 
               />
               <WorkStyleItem 
-                title="Visión a largo plazo" 
-                text="Soluciones mantenibles, documentadas y transferibles." 
+                title="Long-term Vision" 
+                text="Maintainable, documented, and transferable solutions." 
               />
             </ul>
           </div>
@@ -335,10 +298,10 @@ export default function PresentationPageEs() {
                <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-100 rounded-full opacity-50 blur-2xl"></div>
                
               <h3 className="text-xl font-bold text-slate-900 mb-4 flex items-center relative z-10">
-                <span className="text-2xl mr-3">🛡️</span> Confianza y Confidencialidad
+                <span className="text-2xl mr-3">🛡️</span> Trust & Confidentiality
               </h3>
               <p className="text-slate-600 leading-relaxed relative z-10">
-                Los proyectos se tratan con un <strong>alto nivel de confidencialidad</strong> y una atención especial a la seguridad de los datos y sistemas.
+                Projects are treated with a <strong>high level of confidentiality</strong> and special attention to data and system security.
               </p>
               <div className="mt-6 flex gap-3 relative z-10">
                 <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-500">Standard NDA</span>
@@ -352,52 +315,52 @@ export default function PresentationPageEs() {
       {/* 5) EXECUTIVE MINI CV */}
       <section className="px-6 py-24 max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-16 text-center">
-          Perfil profesional
+          Professional Profile
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           
           <div className="md:col-span-1">
-             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Habilidades</h3>
+             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Skills</h3>
              <div className="flex flex-wrap gap-2">
-              <SkillTag>Estrategia Tech</SkillTag>
+              <SkillTag>Tech Strategy</SkillTag>
               <SkillTag>Fullstack Dev</SkillTag>
               <SkillTag>Cloud Arch</SkillTag>
-              <SkillTag>IA y LLMs</SkillTag>
+              <SkillTag>AI & LLMs</SkillTag>
               <SkillTag>Product Mgmt</SkillTag>
             </div>
           </div>
 
           <div className="md:col-span-1">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Stack Tecnológico</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Tech Stack</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex flex-col">
                 <span className="font-bold text-slate-800">Core</span>
                 <span className="text-slate-600">Python, TypeScript, Node.js, Next.js</span>
               </li>
               <li className="flex flex-col">
-                <span className="font-bold text-slate-800">Data e IA</span>
-                <span className="text-slate-600">n8n, OpenAI API, PyTorch, Pandas, Vector DBs</span>
+                <span className="font-bold text-slate-800">Data & AI</span>
+                <span className="text-slate-600">OpenAI API, PyTorch, Pandas, Vector DBs</span>
               </li>
               <li className="flex flex-col">
-                <span className="font-bold text-slate-800">Infraestructura</span>
+                <span className="font-bold text-slate-800">Infrastructure</span>
                 <span className="text-slate-600">AWS, Vercel, Docker, Supabase</span>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-1">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Contexto</h3>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Context</h3>
              <ul className="space-y-4 text-sm text-slate-600">
                <li>
-                 <strong className="text-slate-900 block mb-1">Idiomas</strong>
-                 🇫🇷 Francés (Nativo)<br/>
-                 🇬🇧 Inglés (Pro)<br/>
-                 🇪🇸 Español (Pro)
+                 <strong className="text-slate-900 block mb-1">Languages</strong>
+                 🇫🇷 French (Native)<br/>
+                 🇬🇧 English (Pro)<br/>
+                 🇪🇸 Spanish (Intermediate)
                </li>
                <li>
-                 <strong className="text-slate-900 block mb-1">Visión</strong>
-                 Cerrar la brecha entre la necesidad del negocio y la realidad técnica.
+                 <strong className="text-slate-900 block mb-1">Vision</strong>
+                 Bridging the gap between business needs and technical reality.
                </li>
              </ul>
           </div>
@@ -409,22 +372,22 @@ export default function PresentationPageEs() {
       <section id="contact" className="px-6 py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 shadow-xl border border-slate-100 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-            Hablemos de tu próximo desafío
+            Let's discuss your next challenge
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-2xl mx-auto">
-             Siempre estoy abierto a proyectos ambiciosos que requieran experiencia técnica y una visión estratégica.
+            I am always open to ambitious projects requiring sharp technical expertise and strategic vision.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <a 
-              href="/contact" 
+              href="mailto:contact@michaeldia.com" 
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-white bg-slate-900 hover:bg-slate-800 hover:scale-105 transition-all duration-200 shadow-lg"
             >
-              Iniciar una conversación
+              Start a conversation
             </a>
           </div>
           <p className="mt-8 text-sm text-slate-400">
-            Respuesta en 24-48h • Confidencialidad asegurada
+            Response within 24-48h • Confidentiality assured
           </p>
         </div>
       </section>
@@ -434,16 +397,16 @@ export default function PresentationPageEs() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col items-center">
            <div className="text-lg font-bold text-slate-900 mb-4">Michael DIA</div>
            <p className="text-slate-500 text-sm mb-8">
-             Emprendedor Tech • IA • Automatización
+             Tech Entrepreneur • AI • Automation
            </p>
-
+           
            <div className="flex gap-6 mb-8 text-sm text-slate-500">
-             <a href="/mentions-legales" className="hover:text-indigo-600 transition-colors">Aviso Legal</a>
-             <a href="/confidentialite" className="hover:text-indigo-600 transition-colors">Política de Privacidad</a>
+             <a href="/mentions-legales" className="hover:text-indigo-600 transition-colors">Legal Notice</a>
+             <a href="/confidentialite" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
            </div>
 
            <div className="text-slate-400 text-xs">
-             &copy; {new Date().getFullYear()} Michael DIA. Todos los derechos reservados.
+             &copy; {new Date().getFullYear()} Michael DIA. All rights reserved.
            </div>
         </div>
       </footer>
@@ -460,18 +423,16 @@ function ProjectCard({
   description, 
   tag, 
   highlight, 
-  children,
-  link
+  children 
 }: { 
   title: string, 
   subtitle: string, 
   description?: string, 
   tag?: string, 
   highlight?: string, 
-  children: React.ReactNode,
-  link?: string
+  children: React.ReactNode 
 }) {
-  const content = (
+  return (
     <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-200 transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
       {tag && (
         <span className="absolute top-6 right-6 inline-block px-3 py-1 rounded-full bg-indigo-50 text-xs font-semibold text-indigo-600 border border-indigo-100 uppercase tracking-wide">
@@ -501,16 +462,6 @@ function ProjectCard({
       )}
     </div>
   );
-
-  if (link) {
-    return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full">
-        {content}
-      </a>
-    );
-  }
-
-  return content;
 }
 
 function ListItem({ children }: { children: React.ReactNode }) {

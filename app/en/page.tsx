@@ -393,7 +393,7 @@ export default function PresentationPageEn() {
                  <strong className="text-slate-900 block mb-1">Languages</strong>
                  🇫🇷 French (Native)<br/>
                  🇬🇧 English (Pro)<br/>
-                 🇪🇸 Spanish (Intermediate)
+                 🇪🇸 Spanish (Pro)
                </li>
                <li>
                  <strong className="text-slate-900 block mb-1">Vision</strong>

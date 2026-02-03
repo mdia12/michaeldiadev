@@ -395,7 +395,7 @@ export default function PresentationPage() {
                  <strong className="text-slate-900 block mb-1">Langues</strong>
                  🇫🇷 Français (Natif)<br/>
                  🇬🇧 Anglais (Pro)<br/>
-                 🇪🇸 Espagnol (Intermédiaire)
+                 🇪🇸 Espagnol (Pro)
                </li>
                <li>
                  <strong className="text-slate-900 block mb-1">Vision</strong>
