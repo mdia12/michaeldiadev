@@ -134,6 +134,7 @@ export default function PresentationPageEn() {
               subtitle="AI Automation Agency"
               tag="B2B / SaaS"
               description="Streamlining business operations through custom intelligent agents."
+              link="https://nexoai.fr"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Self-managed AI business agents</ListItem>
@@ -149,6 +150,7 @@ export default function PresentationPageEn() {
               tag="FinTech / Research"
               description="Quantitative research and decision support for financial markets."
               highlight="Research & Responsibility"
+              link="https://algonovaai.com"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Real-time data analysis</ListItem>
@@ -164,6 +166,7 @@ export default function PresentationPageEn() {
               tag="SaaS / Infra"
               description="Technical platform ensuring execution and security of trading operations."
               highlight="Critical Reliability"
+              link="https://algonovaedge.net"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Low-latency connections (Tradovate)</ListItem>
@@ -433,16 +436,18 @@ function ProjectCard({
   description, 
   tag, 
   highlight, 
-  children 
+  children,
+  link
 }: { 
   title: string, 
   subtitle: string, 
   description?: string, 
   tag?: string, 
   highlight?: string, 
-  children: React.ReactNode 
+  children: React.ReactNode,
+  link?: string
 }) {
-  return (
+  const content = (
     <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-200 transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
       {tag && (
         <span className="absolute top-6 right-6 inline-block px-3 py-1 rounded-full bg-indigo-50 text-xs font-semibold text-indigo-600 border border-indigo-100 uppercase tracking-wide">
@@ -472,6 +477,16 @@ function ProjectCard({
       )}
     </div>
   );
+
+  if (link) {
+    return (
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 }
 
 function ListItem({ children }: { children: React.ReactNode }) {

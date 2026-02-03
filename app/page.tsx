@@ -136,6 +136,7 @@ export default function PresentationPage() {
               subtitle="Agence d'Automatisation IA"
               tag="B2B / SaaS"
               description="Fluidifier les opérations des entreprises grâce à des agents intelligents sur mesure."
+              link="https://nexoai.fr"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Agents IA métier autogérés</ListItem>
@@ -151,6 +152,7 @@ export default function PresentationPage() {
               tag="FinTech / Research"
               description="Recherche quantitative et aide à la décision pour les marchés financiers."
               highlight="Recherche & Responsabilité"
+              link="https://algonovaai.com"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Analyse de données temps réel</ListItem>
@@ -166,6 +168,7 @@ export default function PresentationPage() {
               tag="SaaS / Infra"
               description="Plateforme technique assurant l'exécution et la sécurité des opérations de trading."
               highlight="Fiabilité Critique"
+              link="https://algonovaedge.net"
             >
               <ul className="space-y-3 mt-4">
                 <ListItem>Connexions bas-latence (Tradovate)</ListItem>
@@ -429,8 +432,8 @@ export default function PresentationPage() {
 
 // --- Helper Components ---
 
-function ProjectCard({ title, subtitle, children, description, highlight, tag }: { title: string, subtitle: string, children: React.ReactNode, description?: string, highlight?: string, tag?: string }) {
-  return (
+function ProjectCard({ title, subtitle, children, description, highlight, tag, link }: { title: string, subtitle: string, children: React.ReactNode, description?: string, highlight?: string, tag?: string, link?: string }) {
+  const content = (
     <div className="group relative bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-200 transition-all duration-300 flex flex-col h-full hover:-translate-y-1">
       {tag && (
         <span className="absolute top-6 right-6 inline-block px-3 py-1 rounded-full bg-indigo-50 text-xs font-semibold text-indigo-600 border border-indigo-100 uppercase tracking-wide">
@@ -460,6 +463,16 @@ function ProjectCard({ title, subtitle, children, description, highlight, tag }:
       )}
     </div>
   );
+
+  if (link) {
+    return (
+      <a href={link} target="_blank" rel="noopener noreferrer" className="block h-full">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 }
 
 function ListItem({ children }: { children: React.ReactNode }) {
