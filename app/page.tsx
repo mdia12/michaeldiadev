@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import ChatWidget from './components/ChatWidget';
 
 export const metadata: Metadata = {
   title: 'Présentation - Michael DIA',
@@ -449,7 +450,7 @@ export default function PresentationPage() {
            </div>
         </div>
       </footer>
-
+      <ChatWidget />
     </div>
   );
 }
