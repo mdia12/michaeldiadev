@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Presentación - Michael DIA',
-  description: 'Emprendedor Tech, IA y Automatización.',
+  description: 'Emprendedor Tecnológico, IA y Automatización.',
 };
 
 export default function PresentationPageEs() {
@@ -59,7 +59,7 @@ export default function PresentationPageEs() {
         </h1>
         
         <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-          Diseño arquitecturas SaaS robustas y soluciones de IA orientadas al rendimiento operativo y financiero.
+          Diseño arquitecturas SaaS robustas y soluciones de IA orientadas a la eficiencia operativa y financiera.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
@@ -73,7 +73,7 @@ export default function PresentationPageEs() {
             href="/contact" 
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-200 text-base font-medium rounded-full text-slate-700 bg-white hover:bg-slate-50 hover:border-indigo-200 hover:text-indigo-600 transition-all duration-200"
           >
-            Contactarme
+            Contactar
           </a>
         </div>
       </section>
@@ -101,13 +101,13 @@ export default function PresentationPageEs() {
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed p-8 rounded-2xl bg-slate-50/50 border border-slate-100">
                 <p className="mb-6">
-                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Emprendedor Tech y consultor de IA.
+                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Emprendedor Tecnológico y Consultor de IA.
                 </p>
                 <p>
-                  Apasionado por la eficiencia operativa y las tecnologías de punta, no solo escribo código: construyo sistemas. Diseño y despliego soluciones inteligentes que transforman la complejidad técnica en una ventaja competitiva tangible.
+                  Apasionado por la eficiencia operativa y las tecnologías de vanguardia, no solo escribo código: construyo sistemas. Diseño y despliego soluciones inteligentes que transforman la complejidad técnica en una ventaja competitiva tangible.
                 </p>
                 <p className="mt-4">
-                  Mi enfoque es decididamente pragmático. La tecnología no es un fin en sí misma, sino una palanca para servir a una estrategia de negocio clara. Priorizo la robustez, la seguridad y el mantenimiento a largo plazo.
+                  Mi enfoque es eminentemente pragmático. La tecnología no es un fin en sí misma, sino una palanca para servir a una estrategia de negocio clara. Priorizo la robustez, la seguridad y el mantenimiento a largo plazo.
                 </p>
               </div>
               
@@ -141,7 +141,7 @@ export default function PresentationPageEs() {
               title="NexoAI"
               subtitle="Agencia de Automatización IA"
               tag="B2B / SaaS"
-              description="Agilizar las operaciones empresariales mediante agentes inteligentes personalizados."
+              description="Optimización de operaciones empresariales mediante agentes inteligentes a medida."
               link="https://nexoai.fr"
             >
               <ul className="space-y-3 mt-4">
@@ -188,7 +188,7 @@ export default function PresentationPageEs() {
               title="Novareceipt"
               subtitle="Escáner de Recibos IA"
               tag="Productividad / SaaS"
-              description="Aplicación móvil de escaneo de recibos conectada a la IA con exportación automatizada."
+              description="Aplicación móvil para digitalización de recibos conectada a IA con exportación automatizada."
               highlight="Organización Automatizada"
               link="https://www.novareceipt.com/"
             >
@@ -307,12 +307,12 @@ export default function PresentationPageEs() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-8">
-              Mi Forma de Trabajar
+              Metodología de Trabajo
             </h2>
             <ul className="space-y-6">
               <WorkStyleItem 
                 title="Claridad antes que velocidad" 
-                text="Sin deuda técnica inútil. Cada línea de código tiene una razón de ser." 
+                text="Sin deuda técnica superflua. Cada línea de código tiene una razón de ser." 
               />
               <WorkStyleItem 
                 title="Seguridad por defecto" 
