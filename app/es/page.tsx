@@ -15,13 +15,13 @@ export default function PresentationPageEs() {
       <header className="sticky top-0 z-50 w-full border-b border-white/50 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <div className="flex items-center gap-2">
-             <div className="relative w-12 h-12">
+             <div className="relative w-48 h-12">
                <Image 
                 src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/michaeldia%20dev.png"
                 alt="Logotipo Michael DIA"
                 fill
-                className="object-contain"
-                sizes="48px"
+                className="object-contain object-left"
+                sizes="(max-width: 768px) 150px, 200px"
               />
             </div>
           </div>
