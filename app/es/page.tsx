@@ -14,8 +14,16 @@ export default function PresentationPageEs() {
       {/* 0) HEADER */}
       <header className="sticky top-0 z-50 w-full border-b border-white/50 bg-white/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <div className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-indigo-800 bg-clip-text text-transparent">
-            Michael DIA
+          <div className="flex items-center gap-2">
+             <div className="relative w-12 h-12">
+               <Image 
+                src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/michaeldia%20dev.png"
+                alt="Logotipo Michael DIA"
+                fill
+                className="object-contain"
+                sizes="48px"
+              />
+            </div>
           </div>
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
