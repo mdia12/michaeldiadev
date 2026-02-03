@@ -377,7 +377,7 @@ export default function PresentationPageEs() {
               </li>
               <li className="flex flex-col">
                 <span className="font-bold text-slate-800">Data e IA</span>
-                <span className="text-slate-600">OpenAI API, PyTorch, Pandas, Vector DBs</span>
+                <span className="text-slate-600">n8n, OpenAI API, PyTorch, Pandas, Vector DBs</span>
               </li>
               <li className="flex flex-col">
                 <span className="font-bold text-slate-800">Infraestructura</span>
