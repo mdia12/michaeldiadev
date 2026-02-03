@@ -1,6 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 
+import ContactForm from './ContactForm';
+
 export const metadata: Metadata = {
   title: 'Contact - Michael DIA',
   description: 'Prenez contact pour discuter de vos projets IA et Automatisation.',
@@ -75,30 +77,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Form Placeholder / Simple Message */}
-          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg">
-             <h2 className="text-2xl font-bold text-slate-900 mb-6">Envoyer un message</h2>
-             <form action="mailto:contact@michaeldia.com" method="post" encType="text/plain" className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Nom</label>
-                  <input type="text" name="name" id="name" required className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all" />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                  <input type="email" name="email" id="email" required className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all" />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                  <textarea name="message" id="message" rows={4} required className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"></textarea>
-                </div>
-                <button type="submit" className="w-full py-3 px-6 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
-                  Envoyer via votre client email
-                </button>
-             </form>
-             <p className="mt-4 text-xs text-slate-400 text-center">
-               Ce formulaire ouvrira votre logiciel de messagerie par défaut.
-             </p>
-          </div>
+          <ContactForm />
 
         </div>
       </main>
