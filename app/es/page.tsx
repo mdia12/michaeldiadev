@@ -73,13 +73,13 @@ export default function PresentationPageEs() {
       {/* 2) WHO I AM */}
       <section className="px-6 py-24 bg-white relative">
         <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-12">
+            Quién soy
+            <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-4">
-               <h2 className="text-3xl font-bold text-slate-900 sticky top-24 z-10">
-                Quién soy
-                <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
-              </h2>
-              <div className="mt-8 relative w-64 h-auto lg:w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-48">
+              <div className="relative w-64 h-auto lg:w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-24">
                 <Image 
                   src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/mike%20corporate.png"
                   alt="Michael DIA"
