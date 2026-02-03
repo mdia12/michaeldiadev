@@ -175,6 +175,22 @@ export default function PresentationPageEn() {
               </ul>
             </ProjectCard>
 
+            {/* D) Novareceipt */}
+            <ProjectCard 
+              title="Novareceipt"
+              subtitle="AI Receipt Scanner"
+              tag="Productivity / SaaS"
+              description="Mobile receipt scanning app connected to AI with automated export."
+              highlight="Automated Organization"
+              link="https://www.novareceipt.com/"
+            >
+              <ul className="space-y-3 mt-4">
+                <ListItem>Smart receipt scanning</ListItem>
+                <ListItem>AI data extraction</ListItem>
+                <ListItem>Automatic export to Google Drive</ListItem>
+              </ul>
+            </ProjectCard>
+
           </div>
         </div>
       </section>

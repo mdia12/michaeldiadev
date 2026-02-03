@@ -175,6 +175,22 @@ export default function PresentationPageEs() {
               </ul>
             </ProjectCard>
 
+            {/* D) Novareceipt */}
+            <ProjectCard 
+              title="Novareceipt"
+              subtitle="Escáner de Recibos IA"
+              tag="Productividad / SaaS"
+              description="Aplicación móvil de escaneo de recibos conectada a la IA con exportación automatizada."
+              highlight="Organización Automatizada"
+              link="https://www.novareceipt.com/"
+            >
+              <ul className="space-y-3 mt-4">
+                <ListItem>Escaneo inteligente de recibos</ListItem>
+                <ListItem>Extracción de datos por IA</ListItem>
+                <ListItem>Exportación automática a Google Drive</ListItem>
+              </ul>
+            </ProjectCard>
+
           </div>
         </div>
       </section>
