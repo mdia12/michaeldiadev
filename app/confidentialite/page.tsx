@@ -15,7 +15,7 @@ export default function ConfidentialitePage() {
             Michael DIA
           </div>
           <div className="flex items-center gap-6">
-             <a href="/presentation" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Retour à l'accueil</a>
+             <a href="/" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Retour à l'accueil</a>
           </div>
         </div>
       </header>
