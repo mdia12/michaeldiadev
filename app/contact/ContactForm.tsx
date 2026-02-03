@@ -17,7 +17,7 @@ export default function ContactForm() {
     };
 
     try {
-      const response = await fetch('https://n8n.srv1101542.hstgr.cloud/webhook-test/9a22701f-2807-48e6-b920-e6606bc968e5', {
+      const response = await fetch('https://n8n.srv1101542.hstgr.cloud/webhook/9a22701f-2807-48e6-b920-e6606bc968e5', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
