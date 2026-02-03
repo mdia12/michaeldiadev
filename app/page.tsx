@@ -20,7 +20,7 @@ export default function PresentationPage() {
             <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
               <a href="#projects" className="hover:text-indigo-600 transition-colors">Projets</a>
               <a href="#expertise" className="hover:text-indigo-600 transition-colors">Expertise</a>
-              <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
+              <a href="/contact" className="hover:text-indigo-600 transition-colors">Contact</a>
             </nav>
             <div className="flex gap-2 text-sm font-medium">
               <a href="/" className="text-indigo-600 font-bold pb-1 link-underline">FR</a>
@@ -61,7 +61,7 @@ export default function PresentationPage() {
             Télécharger mon profil
           </a>
           <a 
-            href="mailto:contact@michaeldia.com" 
+            href="/contact" 
             className="inline-flex items-center justify-center px-8 py-4 border border-slate-200 text-base font-medium rounded-full text-slate-700 bg-white hover:bg-slate-50 hover:border-indigo-200 hover:text-indigo-600 transition-all duration-200"
           >
             Me contacter
@@ -382,7 +382,7 @@ export default function PresentationPage() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
              <a 
-              href="mailto:contact@michaeldia.com" 
+              href="/contact" 
               className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-full text-white bg-slate-900 hover:bg-slate-800 hover:scale-105 transition-all duration-200 shadow-lg"
             >
               Démarrer une conversation
