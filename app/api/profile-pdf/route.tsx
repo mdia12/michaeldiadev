@@ -2,6 +2,8 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, renderToStream } from '@react-pdf/renderer';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'column',
