@@ -79,12 +79,12 @@ export default function PresentationPageEs() {
                 Quién soy
                 <div className="h-1 w-20 bg-gradient-to-r from-indigo-600 to-emerald-500 mt-4 rounded-full"></div>
               </h2>
-              <div className="mt-8 relative w-64 h-64 lg:w-full lg:h-auto aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-48">
+              <div className="mt-8 relative w-64 h-auto lg:w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/50 sticky top-48">
                 <Image 
                   src="https://nbaiw6gccbuytvgc.public.blob.vercel-storage.com/mike%20corporate.png"
                   alt="Michael DIA"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
               </div>
