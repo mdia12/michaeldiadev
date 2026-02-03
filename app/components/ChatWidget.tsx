@@ -31,23 +31,16 @@ export default function ChatWidget() {
     try {
       // Create a unique session ID or user ID if needed, 
       // but for this simple implementation we just send the message.
-      // The webhook URL provided:
-      const webhookUrl = 'https://n8n.srv1101542.hstgr.cloud/webhook/2fe872b4-4a12-464d-adbf-1471d9684f65/chat';
-
-      // We might need to send specific payload structure expected by n8n
-      // Usually it's JSON. Let's try sending { message: "..." } or { chatInput: "..." }
-      // The user didn't specify the payload format, but standard n8n chat inputs 
-      // often expect query params or a JSON body. I'll assume JSON body with 'message' or 'text'.
-      // Common pattern for simple n8n webhooks is just receiving the JSON.
+      // Use our local API proxy to avoid CORS issues
+      const endpoint = '/api/chat';
       
-      const response = await fetch(webhookUrl, {
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ 
           message: userMessage,
-          // Add basic metadata if helpful
           timestamp: new Date().toISOString(),
           page: window.location.pathname
         }),
