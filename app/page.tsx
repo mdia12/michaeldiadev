@@ -104,13 +104,13 @@ export default function PresentationPage() {
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed p-8 rounded-2xl bg-slate-50/50 border border-slate-100">
                 <p className="mb-6">
-                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Entrepreneur tech & consultant IA.
+                  <strong className="text-slate-900 font-semibold">Michael DIA</strong> — Entrepreneur & Business Developer.
                 </p>
                 <p>
-                  Passionné par l'efficacité opérationnelle et les technologies de pointe, je ne me contente pas de coder : je construis des systèmes. Je conçois et déploie des solutions intelligentes qui transforment la complexité technique en avantage concurrentiel tangible.
+                  J'accompagne les organisations dans la structuration de leurs leviers de croissance par la mise en place de systèmes performants et pérennes. Au-delà de l'innovation technologique, je privilégie une approche stratégique centrée sur l'efficience opérationnelle et la création de valeur tangible.
                 </p>
                 <p className="mt-4">
-                  Mon approche est résolument pragmatique. La technologie n'est pas une fin en soi, mais un levier pour servir une stratégie métier claire. Je privilégie la robustesse, la sécurité et la maintenabilité à long terme.
+                  Cette vision globale me permet d'intervenir sur des projets à forts enjeux, où l'alignement entre vision stratégique et excellence opérationnelle est déterminant pour la réussite du business.
                 </p>
               </div>
               
@@ -231,11 +231,11 @@ export default function PresentationPage() {
             </div>
             
             <div className="space-y-6">
-              <CheckItem text="Architecture SaaS Scalable" subtext="Multi-tenant, Auth, Database design" />
-              <CheckItem text="Intégration d’API Complexes" subtext="Stripe, OpenAI, Brokers, CRMs" />
-              <CheckItem text="Automatisation & IA" subtext="RAG, Agents, Pipelines de données" />
-              <CheckItem text="Sécurité & Chiffrement" subtext="Protection des données sensibles" />
-              <CheckItem text="Développement Rapide (MVP)" subtext="Time-to-market optimizado" />
+              <CheckItem text="Architecture de Systèmes" subtext="Conception de plates-formes robustes et évolutives" />
+              <CheckItem text="Intégration & Unification" subtext="Connexion fluide entre vos outils et flux de données" />
+              <CheckItem text="Automatisation Intelligente" subtext="Optimisation des processus et de la performance" />
+              <CheckItem text="Fiabilité & Sécurité" subtext="Protection des actifs et conformité des données" />
+              <CheckItem text="Déploiement Stratégique" subtext="Lancement efficace orienté résultats et valeur ajoutée" />
             </div>
           </div>
         </div>
