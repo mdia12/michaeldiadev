@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import ChatWidget from '../components/ChatWidget';
+import VCardSection from '../components/VCardSection';
 
 export const metadata: Metadata = {
   title: 'Presentación - Michael DIA',
@@ -405,6 +406,9 @@ export default function PresentationPageEs() {
 
         </div>
       </section>
+
+      {/* 5b) VCARD SECTION */}
+      <VCardSection />
 
       {/* 6) WHY MEET ME (Final CTA) */}
       <section id="contact" className="px-6 py-24 bg-slate-50 border-t border-slate-200">
